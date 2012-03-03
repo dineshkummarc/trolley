@@ -20,7 +20,7 @@ body
     for example in examples
       .row
         .span6
-          pre.prettyprint.lang-js.linenums
+          pre(contenteditable).prettyprint.lang-js.linenums
             for line in example
               |  #{line}
           span.label editable
