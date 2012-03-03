@@ -13,7 +13,7 @@ $(function() {
         // Dirty hack just for the sake of this demo
         eval('world=' + code);
 
-        dbgDraw.m_drawScale = 15;
+        dbgDraw.m_drawScale = 10;
         dbgDraw.SetFlags(b2DebugDraw.e_shapeBit | b2DebugDraw.e_jointBit | b2DebugDraw.e_centerOfMassBit);
         ctx = $draw.get(0).getContext('2d');
         dbgDraw.SetSprite(ctx);

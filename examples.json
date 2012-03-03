@@ -1,3 +1,11 @@
 [{ 
     "title": "Simple"
+},
+{
+    "title": "Chaining",
+    "text": "How shapes inside a body can be chained together"
+},
+{
+    "title": "Options",
+    "text": "Setting Box2D options on bodies"
 }]
