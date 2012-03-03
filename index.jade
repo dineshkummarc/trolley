@@ -21,10 +21,8 @@ body
       .row
         .span6
           pre.prettyprint.lang-js.linenums
-            ol(contenteditable=true)
-              li
-              for line in example
-                li=line
+            for line in example
+              |  #{line}
           span.label editable
           button.re-run.btn.btn-primary.btn-mini
             | Re-run
