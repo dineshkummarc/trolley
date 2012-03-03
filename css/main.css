@@ -1,0 +1,17 @@
+.play {
+    position: absolute;
+    margin-left: 0px;
+    width: 300px;
+    height: 200px;
+}
+
+pre.prettyprint {
+    margin-bottom: 2px;
+}
+
+.ribbon { 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    border: 0;
+}
