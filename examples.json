@@ -8,4 +8,8 @@
 {
     "title": "Options",
     "text": "Setting Box2D options on bodies"
+},
+{
+    "title": "Body options",
+    "text": "Options for body and shape"
 }]

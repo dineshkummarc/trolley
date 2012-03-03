@@ -24,4 +24,15 @@
  
 </pre><span class="label">editable</span><button class="re-run btn btn-primary btn-mini">Re-run
 <i class="icon-play icon-white"></i></button><p>Setting Box2D options on bodies</p></div><div class="span6"><button class="btn well span5 play">Run example
+<i class="icon-play"></i></button><canvas width="300px" height="200px"></canvas></div></div><hr><div class="row"><h2>Body options</h2><div class="span6"><pre contenteditable class="prettyprint lang-js linenums"> trolley.init();
+ trolley.body(0, 0, true).box(15, 1);
+ trolley.body(5, 1).box(2, 2);
+ trolley.body(4.5, 15, {
+     fixedRotation: true
+ }).box(2, 2, {
+     density: 100
+ });
+ 
+</pre><span class="label">editable</span><button class="re-run btn btn-primary btn-mini">Re-run
+<i class="icon-play icon-white"></i></button><p>Options for body and shape</p></div><div class="span6"><button class="btn well span5 play">Run example
 <i class="icon-play"></i></button><canvas width="300px" height="200px"></canvas></div></div><hr></div></body>
