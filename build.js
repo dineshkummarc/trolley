@@ -5,10 +5,15 @@ var dir = __dirname,
 exdir = dir + '/examples/',
 examples = fs.readdirSync(exdir),
 input = fs.readFileSync(dir + '/index.jade'),
-output = dir + '/index.html';
+output = dir + '/index.html',
+data = require('./examples.json');
 
-examples = examples.map(function(ex) {
-    return fs.readFileSync(exdir + ex).toString().split(/\n/);
+examples = examples.map(function(ex, i) {
+    var d = data[i] || {};
+    return {
+        js: fs.readFileSync(exdir + ex).toString().split(/\n/),
+        data: d
+    };
 });
 
 var markup = jade.compile(input)({
