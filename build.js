@@ -8,6 +8,10 @@ input = fs.readFileSync(dir + '/index.jade'),
 output = dir + '/index.html',
 data = require('./examples.json');
 
+examples.sort(function(a, b) {
+    return a > b;
+});
+
 examples = examples.map(function(ex, i) {
     var d = data[i] || {};
     return {

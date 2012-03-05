@@ -11,12 +11,8 @@
 <i class="icon-play icon-white"></i></button><p></p></div><div class="span6"><button class="btn well span5 play">Run example
 <i class="icon-play"></i></button><canvas width="300px" height="200px"></canvas></div></div><hr><div class="row"><h2>Chaining</h2><div class="span6"><pre contenteditable class="prettyprint lang-js linenums"> trolley.init();
  trolley.body(0, 0, true).box(15, 1);
- trolley.body(5, 1).box(2, 2);
- trolley.body(4, 15, {
-     fixedRotation: true
- }).box(2, 2, {
-     density: 100
- });
+ trolley.body(1, 1).box(1, 3);
+ trolley.body(1, 10).box(2, 2, 2, 2).circle(2).circle(0, 4, 2).circle(4, 0, 2).circle(4, 4, 2);
  
 </pre><span class="label">editable</span><button class="re-run btn btn-primary btn-mini">Re-run
 <i class="icon-play icon-white"></i></button><p>How shapes inside a body can be chained together</p></div><div class="span6"><button class="btn well span5 play">Run example
@@ -33,8 +29,12 @@
 <i class="icon-play icon-white"></i></button><p>Setting Box2D options on bodies</p></div><div class="span6"><button class="btn well span5 play">Run example
 <i class="icon-play"></i></button><canvas width="300px" height="200px"></canvas></div></div><hr><div class="row"><h2>Body options</h2><div class="span6"><pre contenteditable class="prettyprint lang-js linenums"> trolley.init();
  trolley.body(0, 0, true).box(15, 1);
- trolley.body(1, 1).box(1, 3);
- trolley.body(1, 10).box(2, 2, 2, 2).circle(2).circle(0, 4, 2).circle(4, 0, 2).circle(4, 4, 2);
+ trolley.body(5, 1).box(2, 2);
+ trolley.body(4, 15, {
+     fixedRotation: true
+ }).box(2, 2, {
+     density: 100
+ });
  
 </pre><span class="label">editable</span><button class="re-run btn btn-primary btn-mini">Re-run
 <i class="icon-play icon-white"></i></button><p>Options for body and shape</p></div><div class="span6"><button class="btn well span5 play">Run example
