@@ -12,4 +12,8 @@
 {
     "title": "Body options",
     "text": "Options for body and shape"
+},
+{
+    "title": "Joints",
+    "text": "First example of how joints can be solved"
 }]
