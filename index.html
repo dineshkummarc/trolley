@@ -46,6 +46,16 @@
  
 </pre><span class="label">editable</span><button class="re-run btn btn-primary btn-mini">Re-run
 <i class="icon-play icon-white"></i></button><p>First example of how joints can be solved</p></div><div class="span6"><button class="btn well span5 play">Run example
+<i class="icon-play"></i></button><canvas width="300px" height="200px"></canvas></div></div><hr><div class="row"><h2>More joints</h2><div class="span6"><pre contenteditable class="prettyprint lang-js linenums"> trolley.init();
+ trolley.body(1, 10, true).box(18, 1);
+ var b1 = trolley.body(10, 20).circle(2).body;
+ var b2 = trolley.body(8, 10).circle(2).body;
+ var b3 = trolley.body(12, 10).circle(2).body;
+ trolley.joint(b1, 1, 1, b2, 1, 1);
+ trolley.joint(b1, 1, 1, b3, 1, 1);
+ 
+</pre><span class="label">editable</span><button class="re-run btn btn-primary btn-mini">Re-run
+<i class="icon-play icon-white"></i></button><p>Three balls linked together as a chain</p></div><div class="span6"><button class="btn well span5 play">Run example
 <i class="icon-play"></i></button><canvas width="300px" height="200px"></canvas></div></div><hr></div><script>var _gaq=_gaq || [];
 _gaq.push(['_setAccount','UA-29703693-1']);
 _gaq.push(['_trackPageview']);

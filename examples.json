@@ -16,4 +16,8 @@
 {
     "title": "Joints",
     "text": "First example of how joints can be solved"
+},
+{
+    "title": "More joints",
+    "text": "Three balls linked together as a chain"
 }]
