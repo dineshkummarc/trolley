@@ -1,4 +1,4 @@
-<!DOCTYPE html><head><title>Trolley</title><meta charset="utf-8"><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css"><script src="http://code.jquery.com/jquery.min.js"></script><script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script><script src="https://raw.github.com/HBehrens/box2d.js/master/javascript/Box2D/box2d.min.js"></script><script src="https://raw.github.com/eirikb/trolley/master/trolley.min.js"></script><script src="main.js"></script><style></style></head><body><a href="http://github.com/eirikb/trolley"><img src="https://a248.e.akamai.net/assets.github.com/img/30f550e0d38ceb6ef5b81500c64d970b7fb0f028/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" class="ribbon"></a><div class="container"><header class="page-header"><h1>Trolley - Box2D utility</h1></header><div class="row"><div class="span16"><p>Please see <a href="http://jsfiddle.net/pm2S4">this jsfiddle</a> for example starting point.
+<!DOCTYPE html><head><title>Trolley</title><meta charset="utf-8"><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css"><script src="http://code.jquery.com/jquery.min.js"></script><script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script><script src="https://raw.github.com/HBehrens/box2d.js/master/javascript/Box2D/box2d.min.js"></script><script src="https://raw.github.com/eirikb/trolley/master/trolley.min.js"></script><!--script(src='trolley.js')--><script src="main.js"></script><style></style></head><body><a href="http://github.com/eirikb/trolley"><img src="https://a248.e.akamai.net/assets.github.com/img/30f550e0d38ceb6ef5b81500c64d970b7fb0f028/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" class="ribbon"></a><div class="container"><header class="page-header"><h1>Trolley - Box2D utility</h1></header><div class="row"><div class="span16"><p>Please see <a href="http://jsfiddle.net/pm2S4">this jsfiddle</a> for example starting point.
 </p><p>All the examples on this page can be found <a href="https://github.com/eirikb/trolley/tree/gh-pages/examples">here</a>. 
 </p></div></div><div class="row"><h2>Simple</h2><div class="span6"><pre contenteditable class="prettyprint lang-js linenums"> trolley.init();
  trolley.body(0, 0, true).box(15, 1);
@@ -42,7 +42,7 @@
  trolley.body(0, 8, true).box(15, 1);
  var b1 = trolley.body(4, 5).circle(2).body;
  var b2 = trolley.body(6, 12).circle(2).body;
- trolley.joint(b1, 1, 1, b2, 1, 1);
+ trolley.joint().a(b1, 1, 1).b(b2, 1, 1);
  
 </pre><span class="label">editable</span><button class="re-run btn btn-primary btn-mini">Re-run
 <i class="icon-play icon-white"></i></button><p>First example of how joints can be solved</p></div><div class="span6"><button class="btn well span5 play">Run example
@@ -51,8 +51,8 @@
  var b1 = trolley.body(15, 20).circle(2).body;
  var b2 = trolley.body(13, 10).circle(2).body;
  var b3 = trolley.body(17, 10).circle(2).body;
- trolley.joint(b1, 1, 1, b2, 1, 1);
- trolley.joint(b1, 1, 1, b3, 1, 1);
+ trolley.joint().a(b1, 1, 1).b(b2, 1, 1);
+ trolley.joint().a(b1, 1, 1).b(b3, 1, 1);
  
 </pre><span class="label">editable</span><button class="re-run btn btn-primary btn-mini">Re-run
 <i class="icon-play icon-white"></i></button><p>Three balls linked together as a chain</p></div><div class="span6"><button class="btn well span5 play">Run example
